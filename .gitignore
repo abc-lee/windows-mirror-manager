@@ -1,11 +1,10 @@
 # Build outputs
-dist/
 build/
-*.spec
+*.pyc
+*.pyo
 
 # Python cache
 __pycache__/
-*.py[cod]
 *$py.class
 *.egg-info/
 .eggs/
@@ -32,3 +31,15 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Project specific
+.sisyphus/
+*.bak
+*.bak2
+*.bak3
+nul
+
+# Keep dist mirrors.json, ignore dist exe for now
+# (users download from releases)
+dist/*.exe
+!dist/.gitkeep
